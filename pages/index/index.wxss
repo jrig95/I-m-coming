@@ -1,0 +1,31 @@
+.date {
+  font-family: open-sans-regular;
+}
+
+.card{
+  width: 350rpx;
+  border: 1rpx solid #EF9A9A;
+  border-radius: 8rpx;
+  overflow: hidden;
+  flex-direction:column;
+  margin: 10rpx;
+  margin: 0 0 1em;
+  
+  box-shadow: 3px 3px rgba(200,200,200, 0.4);
+}
+
+.card-main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+
+}
+
+.masonry { /* Masonry container */
+  column-count: 2;
+  column-gap: .5em;
+  padding: 5rpx;
+  align-items: center
+}

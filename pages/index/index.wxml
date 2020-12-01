@@ -1,0 +1,75 @@
+
+<view class="masonry">
+<view class="card">
+  <view class="card-main">
+    <image class="card-img" mode="aspectFill" src="">restaraunt</image>
+  </view>
+  <view class="description">
+  <view class="name">Name</view>
+  <view class="date">Date</view>
+  <view class="time">Time</view>
+  </view>
+
+</view>
+
+<view class="card">
+  <view class="card-main">
+    <image class="card-img" mode="aspectFill" src="">restaraunt</image>
+  </view>
+  <view class="description">
+  <view class="name">Name</view>
+  <view class="date">Date</view>
+  <view class="time">Time</view>
+  </view>
+
+</view>
+
+<view class="card">
+  <view class="card-main">
+    <image class="card-img" mode="aspectFill" src="">restaraunt</image>
+  </view>
+  <view class="description">
+  <view class="name">Name</view>
+  <view class="date">Date</view>
+  <view class="time">Time</view>
+  </view>
+
+</view>
+
+<view class="card">
+  <view class="card-main">
+    <image class="card-img" mode="aspectFill" src="">restaraunt</image>
+  </view>
+  <view class="description">
+  <view class="name">Name</view>
+  <view class="date">Date</view>
+  <view class="time">Time</view>
+  </view>
+
+</view>
+
+<view class="card">
+  <view class="card-main">
+    <image class="card-img" mode="aspectFill" src="">restaraunt</image>
+  </view>
+  <view class="description">
+  <view class="name">Name</view>
+  <view class="date">Date</view>
+  <view class="time">Time</view>
+  </view>
+
+</view>
+
+<view class="card">
+  <view class="card-main">
+    <image class="card-img" mode="aspectFill" src="">restaraunt</image>
+  </view>
+  <view class="description">
+  <view class="name">Name</view>
+  <view class="date">Date</view>
+  <view class="time">Time</view>
+  </view>
+
+</view>
+
+</view>
