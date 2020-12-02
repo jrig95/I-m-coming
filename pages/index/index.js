@@ -10,4 +10,10 @@ Page({
   onLoad: function () {
   
   },
+  
+  toUpload:function(){
+    wx.navigateTo({
+         url:"/pages/upload/upload"
+    })
+  }
 })
