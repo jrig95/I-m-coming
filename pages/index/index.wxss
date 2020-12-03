@@ -1,31 +1,86 @@
-.date {
-  font-family: open-sans-regular;
+.container1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  margin-bottom: 10rpx;
+}
+
+.btn-upcoming {
+  background-color: white;
+}
+
+.btn-upcoming:hover {
+  opacity: 0.7;
+  text-decoration: underline #f57170; 
+  font-stretch: expanded;
+}
+
+
+.btn-past {
+  background-color: white;
+  text-shadow: yellow; 
 }
 
 .card{
   width: 350rpx;
-  border: 1rpx solid #EF9A9A;
-  border-radius: 8rpx;
+  border: 1rpx solid white;
+  border-radius: 15rpx;
   overflow: hidden;
   flex-direction:column;
-  margin: 10rpx;
+  margin: 10 rpx;
   margin: 0 0 1em;
-  
-  box-shadow: 3px 3px rgba(200,200,200, 0.4);
+  box-shadow: 3px 3px rgba(200, 200, 200, 0.35);
 }
 
 .card-main{
+  background-color:white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
+  padding-bottom: 7rpx;
 
 }
+
+.card-img {
+  background-size: cover;
+}
+
+.card-name{
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #f57170;
+  font-weight: 750;
+  font-size:small;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  padding-bottom: 5rpx;
+}
+
+.card-when{
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #495464;
+  font-weight: 300;
+  font-size: small;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  padding-bottom: 20rpx;
+}
+
 
 .masonry { /* Masonry container */
   column-count: 2;
-  column-gap: .5em;
+  column-gap: .7em;
   padding: 5rpx;
-  align-items: center
+  align-items: center;
+  margin-left: 5rpx;
+  margin-right: 5rpx;
 }
+
+.btn-create {
+  height:70rpx;
+  width: 70rpx;
+  border-radius: 50%;
+}
+
+page {background-color:f4f4f2;}
