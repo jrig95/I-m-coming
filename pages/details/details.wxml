@@ -1,2 +1,21 @@
-<!--pages/index/details.wxml-->
-<text>pages/index/details.wxml</text>
+<!--pages/details/details.wxml-->
+
+<image class="event-img" mode="aspectFill" src="/images/gelatoparty.jpg"></image>
+
+<view class="event-title">Gelato Party</view>
+
+<view class="description-header">Description</view>
+<textarea class="event-description"></textarea>
+
+<picker class="event-date">Date</picker>
+<picker class="event-time">Time</picker>
+<view>location</view>
+
+<view class="item-form">
+<view class="food-form">Food</view>
+<view class="drink-form">Drink</view>
+<view class="equip-form">Equipment</view>
+</view>
+
+<icon>share</icon>
+<icon>map</icon>
