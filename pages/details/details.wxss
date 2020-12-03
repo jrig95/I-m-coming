@@ -1,1 +1,41 @@
-/* pages/index/details.wxss */
+/* pages/details/details.wxss */
+
+.event-img {
+  width: 100%;
+  
+}
+
+.event-description {
+  height: 15vh;
+  width: 80%;
+  border:1rpx;
+}
+
+
+.description-header {
+ font:arial;
+ font-size:30rpx;
+ padding-left: 20rpx;
+ margin-top:10rpx;
+ margin-bottom:10rpx;
+}
+
+.event-title {
+ font:
+ font-size:100rpx;
+ padding-left: 20rpx;
+ margin-top:10rpx;
+ margin-bottom:10rpx;
+}
+
+.event-date {
+ padding-left: 20rpx;
+ margin-top:10rpx;
+ margin-bottom:10rpx;
+}
+
+.event-time {
+  padding-left: 20rpx;
+  margin-top:10rpx;
+  margin-bottom:10rpx;
+ }

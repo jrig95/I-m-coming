@@ -84,4 +84,19 @@
   border-radius: 50%;
 }
 
+.upload {
+  width: 100%;
+  align-items: center;
+}
+
+.container2 {
+  height: 100rpx;
+  width:80rpx;
+  align-items: center;
+  margin-left: 300rpx;
+  margin-right:300rpx;
+  margin-top:100rpx;
+  position: sticky;
+}
+
 page {background-color:f4f4f2;}
