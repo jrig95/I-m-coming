@@ -1,79 +1,32 @@
 <view class="container1">
-  <button class="btn-upcoming">Upcoming</button>
-  <button class="btn-past">Past</button>
+   <button bindtap="goToUpcoming" class="btn-upcoming" >Upcoming</button>
+   <button bindtap="goToPast" class="btn-past">Past</button>
 </view>
-
-
 <view class="masonry">
-
-  <view class="card">
-  <view class="card-main">
-  <image class="card-img" mode="aspectFill"src="/images/cocktailparty.jpg"></image>
-  </view>
-  <view class="card-name">Let's get wasted! Because it's the weekend.</view>
-  <view class="card-when">
-   <view class="date">Date</view>
-   <view class="time">Time</view>
-  </view>
+   <view class="card" bindtap="goToEvent" wx:for="{{upcoming_items}}" id="{{it.id}}" wx:for-item="upcoming" wx:if="{{tab_name === 'upcoming'}}">
+      <view class="card-main">
+         <image class="card-img" mode="aspectFill"src="{{upcoming.Image}}"></image>
+      </view>
+      <view class="card-name">{{upcoming.Description}}</view>
+      <view class="card-when">
+         <view class="date">{{upcoming.Date}}</view>
+         <view class="time">{{upcoming.Time}}</view>
+      </view>
+   </view>
+   <view>
+      <view class="card" bindtap="goToEvent" wx:for="{{past_items}}" id="{{it.id}}" wx:for-item="past" wx:if="{{tab_name === 'past'}}">
+      <view class="card-main">
+         <image class="card-img" mode="aspectFill"src="{{past.Image}}"></image>
+      </view>
+      <view class="card-name">{{past.Description}}</view>
+      <view class="card-when">
+         <view class="date">{{past.Date}}</view>
+         <view class="time">{{past.Time}}</view>
+      </view>
+      </view>
+      
+   </view>
 </view>
-
-<view class="card">
-  <view class="card-main">
-    <image class="card-img" mode="aspectFill" src="/images/gelatoparty.jpg"></image>
-  </view>
-  <view class="card-name">Craving for gelato, hoho.</view>
-  <view class="card-when">
-   <view class="date">Date</view>
-   <view class="time">Time</view>
-  </view>
-</view>
-
-<view class="card">
-  <view class="card-main">
-    <image class="card-img" mode="aspectFill" src="/images/girlparty.jpg"></image>
-  </view>
-  <view class="card-name">name</view>
-  <view class="card-when">
-   <view class="date">Date</view>
-   <view class="time">Time</view>
-  </view>
-</view>
-
-<view class="card">
-  <view class="card-main">
-    <image class="card-img" mode="aspectFill" src="/images/pinicparty.jpg"></image>
-  </view>
-  <view class="card-name">name</view>
-  <view class="card-when">
-   <view class="date">Date</view>
-   <view class="time">Time</view>
-  </view>
-</view>
-
-<view class="card">
-  <view class="card-main">
-    <image class="card-img" mode="aspectFill" src="/images/christmas.jpg"></image>
-  </view>
-  <view class="card-name">Jingle bells, jingle bells!</view>
-  <view class="card-when">
-   <view class="date">Date</view>
-   <view class="time">Time</view>
-  </view>
-</view>
-
-<view class="card">
-  <view class="card-main">
-    <image class="card-img" mode="aspectFill" src="/images/newyear.jpg"></image>
-  </view>
-  <view class="card-name">name</view>
-  <view class="card-when">
-   <view class="date">Date</view>
-   <view class="time">Time</view>
-  </view>
-</view>
-
-</view>
-
 <view class="container2">
   <navigator url = "/pages/upload/upload"><image class="upload" src="/images/upload.svg"></image></navigator>
 </view>
