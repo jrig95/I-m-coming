@@ -14,6 +14,7 @@ Page({
     Food: [],
     Drinks: [],
     Equipment: [],
+    User: [],
 
 
   },
@@ -22,11 +23,14 @@ Page({
     const Event = new wx.BaaS.TableObject("events_planning");
     const EventResources = new wx.BaaS.TableObject("event_resources");
     console.log(options.id);
-    Event.get(options.id).then((res)  => {
+    Event.expand(['creator']).get(options.id).then((res)  => {
       console.log("detail page result", res);
       const Event = res.data
+      const user = res.data.creator
       Event.date_and_time = moment(Event.date_and_time).format('MM/DD hh:mm'),
-      this.setData({Event: Event
+      this.setData({Event: Event,
+        User: user,
+
       });
       
     });
@@ -67,7 +71,12 @@ Page({
       
     });
   
-
+    const currentUser = wx.getStorageSync('user');
+    if (currentUser) {
+      this.setData({
+        currentUser: currentUser,
+      })
+    }
 
 
   },
@@ -92,6 +101,8 @@ Page({
       tab_name: "Equipment"
     });
   },
+
+  
 
 
 })

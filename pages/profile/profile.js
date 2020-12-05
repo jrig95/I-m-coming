@@ -5,15 +5,32 @@ Page({
    * Page initial data
    */
   data: {
-
+    currentUser: null,
   },
 
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    const currentUser = wx.getStorageSync('user');
+    if (currentUser) {
+      this.setData({
+        currentUser: currentUser,
+      })
+    }
   },
+
+  userInfoHandler: function(data) {
+    wx.BaaS.auth.loginWithWechat(data).then(user => {
+      this.setData({
+        currentUser: user,
+      })
+        console.log('user', user);
+      }, err => {
+        console.log("It's an error!", error)
+    })
+  },
+  
 
   /**
    * Lifecycle function--Called when page is initially rendered

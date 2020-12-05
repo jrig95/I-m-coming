@@ -1,1 +1,13 @@
 /* pages/profile/profile.wxss */
+.avatar{
+  border-radius: 50%;
+  height: 120rpx;
+  width: 120rpx;
+  
+}
+
+.profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}

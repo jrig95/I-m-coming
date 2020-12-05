@@ -12,12 +12,10 @@
       {
         "pagePath": "pages/index/index",
         "text": "Events"
-    
       },
       {
         "pagePath": "pages/profile/profile",
         "text": "User"
-  
       }
     ]
     },
