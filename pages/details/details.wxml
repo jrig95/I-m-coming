@@ -4,12 +4,13 @@
 
 <view class="event-title">{{Event.name}}</view>
 
-<view class="description-header">{{Event.description}}</view>
-<textarea class="event-description"></textarea>
-
 <view class= "event-details">
  <view class="date_and_time">{{Event.date_and_time}}</view>
 </view>
+
+<view class="description-header">{{Event.description}}</view>
+<view class="event-description"></view>
+
 
  <view class="location">
   <view>Location</view>
@@ -17,11 +18,8 @@
  </view>
 
 
-
-
-
- <scroll-view scroll-y="true" style="position:absolute; top:0; left:0; right:0; bottom:0;">
- </scroll-view>
+ <!-- <scroll-view scroll-y="true" style="position:absolute; top:0; left:0; right:0; bottom:0;">
+ </scroll-view> -->
 
 
 <view class="item-form">
@@ -38,7 +36,8 @@
     
 
   </view>
-</view>
+ </view>
+
 
 <view wx:if="{{tab_name === 'Drinks'}}">
   <view class="avatar-items" wx:for="{{Drinks}}" id="{{Drinks.id}}" wx:for-item="Drinks">
@@ -54,8 +53,10 @@
   </view>
 </view>
 
+<view class="bottom-buttons">
  <view class="RSVP">
-  <button style="margin:unset;width:170rpx;">share</button>
-  <button style="margin:unset;width:170rpx;">RSVP</button>
+  <button class="btn-share"style="margin:unset;width:auto;">SHARE</button>
+  <button class="btn-RSVP"style="margin:unset;width:auto;">RSVP</button>
  </view>
+</view>
 
