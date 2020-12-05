@@ -76,6 +76,7 @@
   align-items: center;
   margin-left: 5rpx;
   margin-right: 5rpx;
+  display: inline-block;
 }
 
 .btn-create {
