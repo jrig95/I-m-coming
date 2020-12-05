@@ -9,6 +9,11 @@ App({
   
       let clientID = 'f17177e13a6c028af521'  // 应用名称: Collaborate' first MiniApp
       wx.BaaS.init(clientID)
+      wx.BaaS.auth.getCurrentUser().then(function(user){
+        console.log(`Welcome back ${user.nickname}`)
+        wx.setStorageSync('user', user);
+  
+      }) 
     },
 
   
