@@ -3,25 +3,23 @@
    <button bindtap="goToPast" class="btn-past">Past</button>
 </view>
 <view class="masonry">
-   <view class="card" bindtap="goToEvent" wx:for="{{upcoming_items}}" id="{{it.id}}" wx:for-item="upcoming" wx:if="{{tab_name === 'upcoming'}}">
+   <view class="card" bindtap="goToEvent" wx:for="{{upcoming_items}}" id="{{upcoming.id}}" wx:for-item="upcoming" wx:if="{{tab_name === 'upcoming'}}">
       <view class="card-main">
-         <image class="card-img" mode="aspectFill"src="{{upcoming.Image}}"></image>
+         <image class="card-img" mode="aspectFill"src="{{upcoming.image}}"></image>
       </view>
-      <view class="card-name">{{upcoming.Description}}</view>
+      <view class="card-name">{{upcoming.name}}</view>
       <view class="card-when">
-         <view class="date">{{upcoming.Date}}</view>
-         <view class="time">{{upcoming.Time}}</view>
+         <view class="date_and_time">{{upcoming.date_and_time}}</view>
       </view>
    </view>
    <view>
-      <view class="card" bindtap="goToEvent" wx:for="{{past_items}}" id="{{it.id}}" wx:for-item="past" wx:if="{{tab_name === 'past'}}">
+      <view class="card" bindtap="goToEvent" wx:for="{{past_items}}" id="{{past.id}}" wx:for-item="past" wx:if="{{tab_name === 'past'}}">
       <view class="card-main">
-         <image class="card-img" mode="aspectFill"src="{{past.Image}}"></image>
+         <image class="card-img" mode="aspectFill"src="{{past.image}}"></image>
       </view>
-      <view class="card-name">{{past.Description}}</view>
+      <view class="card-name">{{past.name}}</view>
       <view class="card-when">
-         <view class="date">{{past.Date}}</view>
-         <view class="time">{{past.Time}}</view>
+         <view class="date_and_time">{{past.date_and_time}}</view>
       </view>
       </view>
       
