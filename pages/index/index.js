@@ -52,6 +52,7 @@ Page({
   },
   
   goToEvent: function(e){
+    console.log('event', e)
     wx.navigateTo ({
       url: `/pages/details/details?id=${e.currentTarget.id}`,
   });
