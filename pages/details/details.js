@@ -1,23 +1,21 @@
 // pages/index/details.js
-Component({
-  /**
-   * Component properties
-   */
-  properties: {
-
-  },
-
-  /**
-   * Component initial data
-   */
+Page({
+ 
   data: {
+    image: {
+      title: "Loading...",
+    },
+    items: [{ id: 1, text: "Loading..." }],
 
   },
 
-  /**
-   * Component methods
-   */
-  methods: {
+  onLoad: function(options) {
+    
+  
+
+
 
   }
+
+
 })

@@ -1,0 +1,22 @@
+{
+  "name": "miniprogram-8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrig95/I-m-coming.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jrig95/I-m-coming/issues"
+  },
+  "homepage": "https://github.com/jrig95/I-m-coming#readme",
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
+}

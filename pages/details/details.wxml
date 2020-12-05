@@ -2,9 +2,9 @@
 
 <image class="event-img" mode="aspectFill" src="/images/gelatoparty.jpg"></image>
 
-<view class="event-title">Gelato Party</view>
+<view class="event-title">{{event.name}}</view>
 
-<view class="description-header">Description</view>
+<view class="description-header">{{event.description}}</view>
 <textarea class="event-description"></textarea>
 
 <picker class="event-date">Date</picker>
