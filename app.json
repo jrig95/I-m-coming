@@ -11,15 +11,13 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "Events",
-        "iconPath": "/images/birthday.png",
-        "selectedIconPath": "images/birthday.png"
+        "text": "Events"
+    
       },
       {
         "pagePath": "pages/profile/profile",
-        "text": "User",
-        "iconPath": "/images/user.png",
-        "selectedIconPath": "/images/user.png"
+        "text": "User"
+  
       }
     ]
     },
