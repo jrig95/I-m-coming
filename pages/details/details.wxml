@@ -23,7 +23,7 @@
  <view class="item-form">
   <view class="food-form">Food</view>
   <view class="drink-form">Drink</view>
-  <view class="equip-form">Others</view>
+  <view class="equip-form">Equipment</view>
  </view>
 
  <view class="item-area">
