@@ -10,7 +10,6 @@
 .event-container {
   border-radius: 30rpx;
   background-color: teal;
-  scroll-behavior: ;
 }
 
 
