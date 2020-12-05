@@ -3,7 +3,7 @@
    <button bindtap="goToPast" class="btn-past">Past</button>
 </view>
 <view class="masonry">
-   <view class="card" bindtap="goToEvent" wx:for="{{upcoming_items}}" id="{{it.id}}" wx:for-item="upcoming" wx:if="{{tab_name === 'upcoming'}}">
+   <view class="card" bindtap="goToEvent" wx:for="{{upcoming_items}}" id="{{upcoming.id}}" wx:for-item="upcoming" wx:if="{{tab_name === 'upcoming'}}">
       <view class="card-main">
          <image class="card-img" mode="aspectFill"src="{{upcoming.image}}"></image>
       </view>
@@ -13,7 +13,7 @@
       </view>
    </view>
    <view>
-      <view class="card" bindtap="goToEvent" wx:for="{{past_items}}" id="{{it.id}}" wx:for-item="past" wx:if="{{tab_name === 'past'}}">
+      <view class="card" bindtap="goToEvent" wx:for="{{past_items}}" id="{{past.id}}" wx:for-item="past" wx:if="{{tab_name === 'past'}}">
       <view class="card-main">
          <image class="card-img" mode="aspectFill"src="{{past.image}}"></image>
       </view>
