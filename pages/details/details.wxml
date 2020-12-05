@@ -11,10 +11,31 @@
  <view class="date_and_time">{{Event.date_and_time}}</view>
 </view>
 
-<view class="location">
- <view>Location</view>
- <button class="btn-map">See Map</button>
-</view>
+ <view class= "event-details">
+ <view class="event-date">Date</view>
+ <view class="event-time">Time</view>
+ </view>
+
+ <view class="location">
+  <view>Location</view>
+  <button class="btn-map" style="margin:unset;width:130rpx;">See Map</button>
+ </view>
+
+ <view class="item-form">
+  <view class="food-form">Food</view>
+  <view class="drink-form">Drink</view>
+  <view class="equip-form">Others</view>
+ </view>
+
+ <view class="item-area">
+  <view class="food-area">pizza gelato cookie</view>
+  <view class="drink-area">beer</view>
+  <view class="equip-are">laptop</view>
+ </view>
+
+ <scroll-view scroll-y="true" style="position:absolute; top:0; left:0; right:0; bottom:0;">
+ </scroll-view>
+
 
 <view class="item-form">
 <button bindtap="goToFood" class="food-form" >Food</button>
@@ -41,8 +62,8 @@
   </view>
 </view>
 
+ <view class="RSVP">
+  <button style="margin:unset;width:170rpx;">share</button>
+  <button style="margin:unset;width:170rpx;">RSVP</button>
+ </view>
 
-<view class="RSVP">
- <button>share</button>
- <button>RSVP</button>
-</view>
