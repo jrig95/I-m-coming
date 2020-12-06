@@ -1,2 +1,20 @@
 <!--pages/upload/upload.wxml-->
+<view class="profileupload" >
+  <view class="cardimage">
+    <image class="card-img" mode="aspectFill"> Image Logo </image>
+    <text>Upload Your Photo Here</text>
+  </view>
+  </view>
 
+  <view class="eventcard">
+    <text class="event">Event Name</text> 
+  <form bindsubmit="formSubmit">
+      <textarea class="eventarea" name="eventarea" bindconfirm="formSubmit" placeholder="What is the name of your event?"></textarea>
+  </form>
+  </view>
+
+  <view class="whencard" >
+    <text class="When">Date and Time?</text> 
+    <picker class="date-picker" mode="date" bindchange="datechanger">{{date || "Please Select Your Date"}}</picker>
+    <picker class="time-picker" mode="time" bindchange="timechanger">{{time || "Please Select Your Time"}}</picker>
+  </view>

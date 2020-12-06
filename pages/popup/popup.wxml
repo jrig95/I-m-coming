@@ -1,2 +1,29 @@
 <!--pages/index/popup.wxml-->
-<text>pages/index/popup.wxml</text>
+<view class="pagecontainer">
+  <text class="boxtitle">Food</text>
+  <form bindsubmit="postStory">
+      <view class="postbox">
+        <textarea class="textarea" name="textarea" bindconfirm="formSubmit" placeholder="What Food Will You Bring?"></textarea>
+    </view>
+  </form>
+
+  <text class="boxtitle">Drink</text>
+  <form bindsubmit="postView">
+    <view class="postbox">
+      <textarea class="textarea" name="textarea" bindconfirm="formSubmit" placeholder="Which Drinks Will You Bring?"></textarea>
+    </view>
+  </form>
+
+  <text class="boxtitle">Equipment</text> 
+  <form bindsubmit="postView">
+    <view class="postbox">
+      <textarea class="textarea" name="textarea" bindconfirm="formSubmit" placeholder="What Equipment Will You Bring?"></textarea>
+    </view>
+  </form>
+
+  <view class="buttoncontainer">
+    <button class="button" form-type="submit">Submit</button>
+    <button class="button" form-type="submit">Leave</button>
+  </view>
+
+</view>
