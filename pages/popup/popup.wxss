@@ -1,1 +1,42 @@
 /* pages/index/popup.wxss */
+.pagecontainer{
+  align-items: center;
+  }
+  
+  .boxtitle{
+    color: #000000;
+    font-size: large;
+    font-weight: 600;
+    padding: auto;
+    margin-left: 25rpx;
+  }
+  
+  .postbox{
+    margin-top: 15rpx;
+    margin-bottom: 15rpx;
+  } 
+  
+  .textarea {
+    background-color: whitesmoke;
+    height: 300rpx;
+    width: 700rpx;
+    flex-direction: column;
+    display: left;
+    padding: 10rpx;
+    box-sizing:border-box;
+    font-size: 30rpx;
+    margin: 0 auto;
+  }
+  
+  .buttoncontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 20rpx;
+  }
+  
+  .button{
+    width: auto;
+    color: whitesmoke;
+    background-color: darkgrey;
+  }

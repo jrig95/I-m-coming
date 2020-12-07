@@ -1,1 +1,31 @@
-/* pages/index/upload.wxss */
+/* pages/index/popup.wxss */
+.profileupload{
+  background-color: grey;
+}
+
+
+.eventarea{
+background-color: greenyellow;
+border: grey 3rpx solid;
+padding:15rpx;
+margin:0 auto;
+height: 30rpx;
+width: auto;
+}
+
+.eventcard{
+  padding:25rpx;
+}
+
+.whencard{
+    padding:25rpx;
+}
+
+.whenarea{
+  background-color: greenyellow;
+  border: grey 3rpx solid;
+  padding:30rpx;
+  margin:0 auto;
+  height: 20rpx;
+  width: auto;
+  }
