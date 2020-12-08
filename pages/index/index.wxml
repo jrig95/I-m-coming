@@ -25,6 +25,7 @@
       
    </view>
 </view>
+
 <view class="container2">
   <navigator url = "/pages/upload/upload"><image class="upload" src="/images/upload.svg"></image></navigator>
 </view>

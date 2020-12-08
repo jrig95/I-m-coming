@@ -17,6 +17,9 @@
   <button class="btn-map" style="margin:unset;width:130rpx;">See Map</button>
  </view>
 
+ <view class="attendees">Who's In 🙌🏻
+ </view>
+ <view class="attendee-avatar"></view>
 
  <!-- <scroll-view scroll-y="true" style="position:absolute; top:0; left:0; right:0; bottom:0;">
  </scroll-view> -->
@@ -53,10 +56,13 @@
   </view>
 </view>
 
+
 <view class="bottom-buttons">
  <view class="RSVP">
   <button class="btn-share"style="margin:unset;width:auto;">SHARE</button>
   <button class="btn-RSVP"style="margin:unset;width:auto;">RSVP</button>
  </view>
 </view>
+
+
 

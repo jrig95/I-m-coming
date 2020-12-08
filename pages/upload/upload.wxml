@@ -14,7 +14,32 @@
   </view>
 
   <view class="whencard" >
-    <text class="When">Date and Time?</text> 
-    <picker class="date-picker" mode="date" bindchange="datechanger">{{date || "Please Select Your Date"}}</picker>
-    <picker class="time-picker" mode="time" bindchange="timechanger">{{time || "Please Select Your Time"}}</picker>
+    <text class="when">Date and Time?</text> 
+    <view class="Whenarea">
+    <picker class="date-picker" mode="date" bindchange="datechanger">{{date || "Click To Select Your Date"}}</picker>
+    <picker class="time-picker" mode="time" bindchange="timechanger">{{time || "Click To Select Your Time"}}</picker>
+    </view>
+  </view>
+
+  <view class="wherecard">
+    <text class="event">Event Location</text> 
+    <form bindsubmit="formSubmit">
+      <textarea class="wherearea" name="wherearea" bindconfirm="formSubmit" placeholder="Where is your event?"></textarea>
+    </form>
+    <text class="pinlocation">Pin Your Location</text>
+  </view>
+
+  <view class="descriptioncard">
+    <text class="description">Description</text> 
+    <form bindsubmit="formSubmit">
+      <textarea class="descriptionarea" name="descriptionarea" bindconfirm="formSubmit" placeholder="Decribe Your Event"></textarea>
+    </form>
+  </view>
+
+  <view class="bringcard">
+    <text class="bring">Do you want attendees to bring food/drinks or equipment?</text> 
+    <view class="button-area">
+     <button class="btn-yes">Yes</button>
+     <button class="btn-no">No</button>
+    </view>
   </view>
