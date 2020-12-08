@@ -11,7 +11,7 @@ Page({
   tab_name: "upcoming"
   },
   
-  onLoad: function () {
+  onShow: function () {
     const events = new wx.BaaS.TableObject("events_planning");
 
     events.find().then((res) =>{

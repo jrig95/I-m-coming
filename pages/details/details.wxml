@@ -1,8 +1,10 @@
 <!--pages/details/details.wxml-->
 
 <cover-image class="event-banner" mode="aspectFill" src="{{Event.image}}"></cover-image>
-
+<view class="event-creator">
 <view class="event-title">{{Event.name}}</view>
+<image class="avatar" src="{{User.avatar}}"></image>
+</view>
 
 <view class= "event-details">
  <view class="date_and_time">{{Event.date_and_time}}</view>
@@ -14,7 +16,7 @@
 
  <view class="location">
   <view>Location</view>
-  <button class="btn-map" style="margin:unset;width:130rpx;">See Map</button>
+  <button class="btn-map" bindtap="openMap" style="margin:unset;width:130rpx;">See Map</button>
  </view>
 
 
@@ -56,7 +58,7 @@
 <view class="bottom-buttons">
  <view class="RSVP">
   <button class="btn-share"style="margin:unset;width:auto;">SHARE</button>
-  <button class="btn-RSVP"style="margin:unset;width:auto;">RSVP</button>
+  <button class="btn-RSVP" bindtap="goToPopup" style="margin:unset;width:auto;">RSVP</button>
  </view>
 </view>
 
