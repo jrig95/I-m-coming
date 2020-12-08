@@ -1,20 +1,47 @@
 <!--pages/upload/upload.wxml-->
-<view class="profileupload" >
-  <view class="cardimage">
-    <image class="card-img" mode="aspectFill"> Image Logo </image>
-    <text>Upload Your Photo Here</text>
-  </view>
+
+<form bindsubmit="submitEvent">
+  <view class="profileupload" >
+    <view class="cardimage">
+      <button bindtap="getPhoto" type="primary" wx:if="{{!image}}">Upload Image</button>
+      <image wx:else src="{{image}}" mode="aspectFill" bindtap="previewImage"></image>
+      <text>Upload Your Photo Here</text> 
+    </view>
   </view>
 
   <view class="eventcard">
     <text class="event">Event Name</text> 
-  <form bindsubmit="formSubmit">
-      <textarea class="eventarea" name="eventarea" bindconfirm="formSubmit" placeholder="What is the name of your event?"></textarea>
-  </form>
+    <input class="eventarea" name="name" placeholder="What is the name of your event?"/>
   </view>
 
   <view class="whencard" >
     <text class="When">Date and Time?</text> 
     <picker class="date-picker" mode="date" bindchange="datechanger">{{date || "Please Select Your Date"}}</picker>
     <picker class="time-picker" mode="time" bindchange="timechanger">{{time || "Please Select Your Time"}}</picker>
+    <view class="btn-area">
+      <view class="wherecard">
+    <text class="event">Event Location</text> 
+    <form bindsubmit="formSubmit">
+      <textarea  bindtap="getLocation" class="wherearea" name="address" bindconfirm="formSubmit" value="{{address}}"></textarea>
+    </form>
+    <text class="pinlocation">Pin Your Location</text>
   </view>
+
+  <view class="descriptioncard">
+    <text class="description">Description</text> 
+    <form bindsubmit="formSubmit">
+      <textarea class="descriptionarea" name="description" bindconfirm="formSubmit" placeholder="Decribe Your Event"></textarea>
+    </form>
+  </view>
+
+  <view class="bringcard">
+    <radio-group bindchange="radioChange" class="bring">Do you want attendees to bring food/drinks or equipment?
+      <label class="radio" wx:for="{{items}}">
+        <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+      </label>
+    </radio-group>
+  </view>
+      <button formType="submit">Submit</button>
+    </view>
+  </view>
+</form>

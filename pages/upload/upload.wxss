@@ -1,6 +1,13 @@
 /* pages/index/popup.wxss */
+.container{
+  width:100vw;
+  height: 100vh;
+}
+
 .profileupload{
   background-color: grey;
+  align-items: center;
+  
 }
 
 
@@ -29,3 +36,46 @@ width: auto;
   height: 20rpx;
   width: auto;
   }
+
+  .wherearea{
+    background-color: greenyellow;
+    border: grey 3rpx solid;
+    padding:15rpx;
+    margin:0 auto;
+    height: 30rpx;
+    width: auto;
+    }
+
+    .wherecard{
+      padding:25rpx;
+    }
+
+    .pinlocation{
+      color:grey
+    }
+
+    .descriptionarea{
+      background-color: greenyellow;
+      border: grey 3rpx solid;
+      padding:15rpx;
+      margin:0 auto;
+      height: 30rpx;
+      width: auto;
+      }
+
+      .descriptioncard{
+        padding:25rpx;
+      }
+
+      .bringarea{
+        background-color: greenyellow;
+        border: grey 3rpx solid;
+        padding:15rpx;
+        margin:0 auto;
+        height: 30rpx;
+        width: auto;
+        }
+
+        .bringcard{
+          padding:25rpx;
+        }
