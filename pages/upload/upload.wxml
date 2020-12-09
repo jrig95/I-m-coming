@@ -1,5 +1,4 @@
 <!--pages/upload/upload.wxml-->
-
 <form bindsubmit="submitEvent">
   <view class="profileupload" >
     <view class="cardimage">
@@ -16,8 +15,10 @@
 
   <view class="whencard" >
     <text class="When">Date and Time?</text> 
-    <picker class="date-picker" mode="date" bindchange="datechanger">{{date || "Please Select Your Date"}}</picker>
-    <picker class="time-picker" mode="time" bindchange="timechanger">{{time || "Please Select Your Time"}}</picker>
+    <view class="Whenarea">
+    <picker class="date-picker" mode="date" bindchange="datechanger">{{date || "Click To Select Your Date"}}</picker>
+    <picker class="time-picker" mode="time" bindchange="timechanger">{{time || "Click To Select Your Time"}}</picker>
+    </view>
     <view class="btn-area">
       <view class="wherecard">
     <text class="event">Event Location</text> 

@@ -40,6 +40,7 @@
  font-size: 50rpx;
  font-weight:bold;
  justify-content: center;
+ color: #f57170;
  padding-left: 20rpx;
  padding-top:20rpx;
  margin-bottom:10rpx;
@@ -58,7 +59,7 @@
 }
 
 .item-form {
-  border-bottom: 2rpx dotted #bbbbbb;
+  border-bottom: 2rpx dotted #ea97ad;
   padding-right: 20rpx;
   padding-left:20rpx;
   margin-left: 30rpx;
@@ -85,7 +86,7 @@
   margin:unset;
   align-items: flex-end;
   justify-content: space-between;
-  font-size: 35rpx;
+  font-size: 30rpx;
   padding-right:10rpx;
   padding-left:20rpx;
   margin-top:10rpx;
@@ -94,6 +95,7 @@
 
 .item-form {
   font-family: 'Lato', sans-serif;
+  font-size: 30rpx;
   display:flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -111,7 +113,7 @@
   background-color: white;
   font-family: 'Lato', sans-serif;
   font-size: 30rpx;
-  color: #707070;
+  color: #999b84;
   justify-content: center;
 
 }
@@ -120,7 +122,7 @@
   background-color: white;
   font-family: 'Lato', sans-serif;
   font-size: 30rpx;
-  color: #707070;
+  color: #999b84;
   justify-content: center;
 }
 
@@ -128,7 +130,7 @@
   background-color: white;
   font-family: 'Lato', sans-serif;
   font-size: 30rpx;
-  color: #707070;
+  color: #999b84;
   /* padding-right: 20rpx; */
   justify-content: center;
 }
@@ -136,21 +138,23 @@
 .food-list {
   font-size:40rpx;
   word-wrap: break-word;
+  margin-bottom: 10rpx;
 }
 
 .btn-map {
   margin:unset;
   display: flex;
   align-items: flex-end;
-  width:70rpx;
+  width:140rpx;
   justify-content: center;
   background-color: white;
   color: black;
-  border: 2px solid #f9ed69;
+  border: 2px solid #fd8c04;
   font-size: 25rpx;
   font-family: 'Lato', sans-serif;
   text-align: center;
   padding-top: 15rpx;
+  margin-right: 25rpx;
   padding-bottom: 15rpx;
  /* display: inline-block; */
  box-shadow: 0 8px 10px 0 rgba(0,0,0,0.1);
@@ -169,23 +173,20 @@
  padding-right:70rpx ;
  bottom: 0em;
  background-color: white;
+ margin-top: 40rpx;
 }
 
-.bottom-buttons {
-  /* position: fixed; */
-  padding-top: 100rpx;
-  bottom: 0em;
-  text-align: center;
 
-}
 
 .btn-share {
   padding-left: 30rpx;
   padding-right: 30rpx;
   justify-content: center;
  background-color: white;
-  color: black;
-  border: 2px solid #a6e3e9;
+  color:white;
+  background-color: #efb08c;
+  border-radius: 20rpx;
+  box-shadow: 0 8px 10px 0 rgba(0,0,0,0.1);
   text-align: center;
 }
 
@@ -196,12 +197,16 @@
   margin-right: 30rpx;
   justify-content: center;
   background-color: white;
-  color: black;
-  border: 2px solid #a6e3e9;
+  color:white;
+  background-color: #a3d8f4;
+  /* border: 2px solid #a6e3e9; */
+  border-radius: 20rpx;
   text-align: center;
 }
 
 .item-area{
+  font-size: 20rpx;
+  font-family: 'Lato', sans-serif;
   display:flex;
   justify-content: space-evenly;
   align-items: center;
@@ -210,11 +215,22 @@
 }
 
 .avatar-items{
+  font-size: 30rpx;
+  font-family: 'Lato', sans-serif;
   display: inline-flex;
+  padding-top:12rpx;
 }
 
 .avatar{
   border-radius: 50%;
   height: 40rpx;
   width: 40rpx;
+}
+
+
+.attendees{
+  font-size: 30rpx;
+  font-family: 'Lato', sans-serif;
+  padding: 20rpx; 
+
 }

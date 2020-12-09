@@ -1,5 +1,9 @@
 <!--pages/index/popup.wxml-->
 <view class="pagecontainer">
+ <view class="message-area">
+  <text class="message">Would you like attendees to bring anything to the event?</text>
+ </view>
+
   <text class="boxtitle">Food</text>
   <form bindsubmit="postStory">
       <view class="postbox">
@@ -21,7 +25,7 @@
     </view>
   </form>
 
-  <view class="buttoncontainer">
+  <view class="buttoncontainer" style="margin:unset">
     <button class="button" form-type="submit">Submit</button>
     <button class="button" form-type="submit">Leave</button>
   </view>
