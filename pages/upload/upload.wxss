@@ -1,4 +1,9 @@
 /* pages/index/popup.wxss */
+.container{
+  width:100vw;
+  height: 100vh;
+}
+
 .profileupload{
   background-color: lightgray;
 }
@@ -114,7 +119,7 @@ width: auto;
           color:black;
         }
 
-        .when{
+        .When{
           font-size: 30rpx;
           font-family: 'Lato', sans-serif;
           font-weight: bold;

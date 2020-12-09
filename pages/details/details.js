@@ -15,6 +15,7 @@ Page({
     Drinks: [],
     Equipment: [],
     User: [],
+    
 
 
   },
@@ -77,6 +78,7 @@ Page({
         currentUser: currentUser,
       })
     }
+    
 
 
   },
@@ -101,6 +103,37 @@ Page({
       tab_name: "Equipment"
     });
   },
+
+  openMap:function(map){
+    wx.getLocation({
+      type: 'wgs84',
+      success:function(res){
+        console.log(res)
+      }
+    })
+    wx.chooseLocation({
+      success: function(res) {
+        console.log(res)
+        let latitude = res.latitude
+        let longitude = res.longitude
+        let address = res.address
+        
+
+        let Event = new wx.BaaS.TableObject('events_planning')
+        let event = Event.create()
+        event.set({latitude, longitude, address}).save()
+      }
+    })
+  },
+
+  goToPopup: function(go){
+    wx.navigateTo ({
+      url: `/pages/popup/popup?id=${go.currentTarget.id}`,
+
+  })
+}
+
+
 
   
 
