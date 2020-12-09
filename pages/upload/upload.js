@@ -18,6 +18,7 @@ Page({
     },
 
     getPhoto: function() {
+        const that = this;
         wx.chooseImage({
             count: 1,
             sizeType: ['original'],
@@ -40,6 +41,7 @@ Page({
                   mask: true,
                   success: (result) => {
                       console.log("result", result)
+                      wx.hideLoading();
                   },
                   fail: () => {},
                   complete: () => {}
@@ -48,25 +50,16 @@ Page({
                   File.upload(fileParams, metadata).then(
                     (res) => {
                         console.log("upload image res", res);
-                        const Events = new wx.BaaS.TableObject("events_planning");
-        
-                       
-        
-                        Events.set({
+                         that.setData({
                             image: res.data.path,
                         });
 
                       })
-        
-                       
-
-                  
-
-
-            },
+             },
             fail: (err) => {
                 console.log('getPhoto err', err);
-            }
+            },
+            complete: () => {}
         })
         
 
@@ -154,6 +147,7 @@ Page({
         }).catch(err => {
             console.log(err)
         })
+
 
 
 
