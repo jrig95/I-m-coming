@@ -58,7 +58,7 @@
 
 <view class="bottom-buttons">
  <view class="RSVP">
-  <button class="btn-share"style="margin:unset;width:auto;" bindtap="shareToFriends">SHARE</button>
+  <button class="btn-share" style="margin:unset;width:auto;" open-type="share">SHARE</button>
   <button id="{{event.id}}" class="btn-RSVP" bindtap="goToPopup" style="margin:unset;width:auto;">RSVP</button>
  </view>
 </view>

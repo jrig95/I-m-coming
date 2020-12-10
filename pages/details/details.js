@@ -125,14 +125,10 @@ Page({
     })
   },
 
-  shareToFriends: function(e){
-    console.log("event",e)
-    wx.showShareMenu({
-      withShareTicket: true
-    })
+  onShareAppMessage: function () {
     return {
-      title: this.data.title,
-      path: `/pages/detail?id=${this.data.id}`,
+      title: this.data.event.name,
+      path: `/pages/detail/detail?id=${this.data.event.id}`,
       imageUrl: this.data.image
     }
   }
