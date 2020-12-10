@@ -1,5 +1,7 @@
 <!--pages/index/popup.wxml-->
-<form bindsubmit="submitEvent" class="pagecontainer">
+<view mode="aspectfill" class="pagecontainer">
+<form bindsubmit="submitEvent" mode="aspectfill">
+
  <view class="message-area">
   <text class="message">Would you like attendees to bring anything to the event?</text>
  </view>
@@ -38,3 +40,4 @@
   </view>
 
 </form>
+</view>

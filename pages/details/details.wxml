@@ -2,8 +2,10 @@
 
 <cover-image class="event-banner" mode="aspectFill" src="{{event.image}}"></cover-image>
 <view class="event-creator">
-<view class="event-title">{{event.name}}</view>
-<image class="avatar" src="{{user.avatar}}"></image>
+  <view class="avataricon">
+  <image class="avatar" src="{{user.avatar}}"></image>
+  <view class="event-title">{{event.name}}</view>  
+  </view>
 </view>
 
 <view class= "event-details">
@@ -65,10 +67,7 @@
 
 <view class="bottom-buttons">
  <view class="RSVP">
-  <button class="btn-share" style="margin:unset;width:auto;" open-type="share">SHARE</button>
-  <button id="{{event.id}}" class="btn-RSVP" bindtap="goToPopup" style="margin:unset;width:auto;">RSVP</button>
+  <button class="btn-share" style="margin:unset;" open-type="share">SHARE</button>
+  <button id="{{event.id}}" class="btn-RSVP" bindtap="goToPopup" style="margin:unset;">RSVP</button>
  </view>
 </view>
-
-
-

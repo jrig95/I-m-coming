@@ -7,7 +7,8 @@
   font-family: 'Lato', sans-serif;
   font-weight: 600;
   background-image: url("https://cloud-minapp-37951.cloud.ifanrusercontent.com/1kmbsgOZOEWL2IFE.png");
-  background-size:cover;
+  min-height: 100vh;
+  width: auto;
   }
 
   
@@ -15,6 +16,7 @@
    height: 15vh;
    justify-content: center;
    padding-bottom:20rpx;
+   padding-top:50rpx;
    padding-left:20rpx;
    color:white;
    font-size: large;
@@ -61,7 +63,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    margin-top: 20rpx;
+    margin-top: 40rpx;
+    padding-top: 40rpx;
   }
   
   .button{
@@ -79,3 +82,5 @@
     text-align: center;
     width:80rpx;
   }
+
+ 
