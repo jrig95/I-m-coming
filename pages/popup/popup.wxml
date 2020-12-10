@@ -1,33 +1,33 @@
 <!--pages/index/popup.wxml-->
-<view class="pagecontainer">
+<form bindsubmit="submitEvent" class="pagecontainer">
  <view class="message-area">
   <text class="message">Would you like attendees to bring anything to the event?</text>
  </view>
 
   <text class="boxtitle">Food</text>
-  <form bindsubmit="postStory">
+  <view bindsubmit="postStory">
       <view class="postbox">
-        <textarea class="textarea" name="textarea" bindconfirm="formSubmit" placeholder="What Food Will You Bring?"></textarea>
+        <input class="textarea" name="food" bindconfirm="formSubmit" placeholder="What Food Will You Bring?"/>
     </view>
-  </form>
-
-  <text class="boxtitle">Drink</text>
-  <form bindsubmit="postView">
-    <view class="postbox">
-      <textarea class="textarea" name="textarea" bindconfirm="formSubmit" placeholder="Which Drinks Will You Bring?"></textarea>
-    </view>
-  </form>
-
-  <text class="boxtitle">Equipment</text> 
-  <form bindsubmit="postView">
-    <view class="postbox">
-      <textarea class="textarea" name="textarea" bindconfirm="formSubmit" placeholder="What Equipment Will You Bring?"></textarea>
-    </view>
-  </form>
-
-  <view class="buttoncontainer" style="margin:unset">
-    <button class="button" form-type="submit">Submit</button>
-    <button class="button" form-type="submit">Leave</button>
   </view>
 
-</view>
+  <text class="boxtitle">Drink</text>
+  <view bindsubmit="postView">
+    <view class="postbox">
+      <input class="textarea" name="drink" bindconfirm="formSubmit" placeholder="Which Drinks Will You Bring?"/>
+    </view>
+  </view>
+
+  <text class="boxtitle">Equipment</text> 
+  <view bindsubmit="postView">
+    <view class="postbox">
+      <input class="textarea" name="equipment" bindconfirm="formSubmit" placeholder="What Equipment Will You Bring?"/>
+    </view>
+  </view>
+
+  <view class="buttoncontainer" style="margin:unset">
+    <button wx:if="{{user.is_authorized}}" class="button" form-type="submit">Submit</button>
+    <button wx:else open-type="getUserInfo" bindgetuserinfo="userInfoHandler" class="button">Submit</button>  
+  </view>
+
+</form>
