@@ -29,9 +29,8 @@
 
   <view class="descriptioncard">
     <text class="description">Description</text> 
-    <form bindsubmit="formSubmit">
-      <textarea class="descriptionarea" name="description" bindconfirm="formSubmit" placeholder="Decribe Your Event"></textarea>
-    </form>
+    
+      <input class="descriptionarea" name="description" placeholder="Decsribe Your Event"/>
   </view>
 
   <view class="bring">
@@ -40,7 +39,10 @@
       </label>
     </radio-group>
   </view>
-      <button class="submitbutton" formType="submit">Submit</button>
+
+  <button wx:if="{{user.is_authorized}}" class="submitbutton" form-type="submit">Submit</button>
+  <button wx:else open-type="getUserInfo" bindgetuserinfo="userInfoHandler" class="submitbutton">Submit</button>
+
     </view>
   </view>
 </form>

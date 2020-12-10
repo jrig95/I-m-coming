@@ -32,13 +32,8 @@ Page({
           futureEvents.push(newEvent);
 
         }
-
-        
- 
   
       };
-
-
       console.log(pastEvents);
       this.setData({
         upcoming_items: futureEvents,

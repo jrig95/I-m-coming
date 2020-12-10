@@ -1,18 +1,18 @@
 <!--pages/details/details.wxml-->
 
-<cover-image class="event-banner" mode="aspectFill" src="{{Event.image}}"></cover-image>
+<cover-image class="event-banner" mode="aspectFill" src="{{event.image}}"></cover-image>
 <view class="event-creator">
   <view class="avataricon">
-  <image class="avatar" src="{{User.avatar}}"></image>
-  <view class="event-title">{{Event.name}}</view>  
+  <image class="avatar" src="{{user.avatar}}"></image>
+  <view class="event-title">{{event.name}}</view>  
   </view>
 </view>
 
 <view class= "event-details">
- <view class="date_and_time">{{Event.date_and_time}}</view>
+ <view class="date_and_time">{{event.date_and_time}}</view>
 </view>
 
-<view class="description-header">{{Event.description}}</view>
+<view class="description-header">{{event.description}}</view>
 <view class="event-description"></view>
 
 
@@ -36,37 +36,31 @@
 </view>
 
 <view wx:if="{{tab_name === 'Food'}}">
-  
-  <view class="avatar-items" wx:for="{{Food}}" id="{{Food.id}}" wx:for-item="Foods">
-    <image class="avatar" src="{{User.avatar}}"></image>
-    {{Foods.food}}
-    
-
+  <view class="avatar-items" wx:for="{{food}}" id="{{food.id}}" wx:for-item="food">
+    <image class="avatar" src="{{food.resource.avatar}}"></image>
+    {{food.food}}
   </view>
  </view>
 
 
 <view wx:if="{{tab_name === 'Drinks'}}">
-  <view class="avatar-items" wx:for="{{Drinks}}" id="{{Drinks.id}}" wx:for-item="Drinks">
-    <image class="avatar" src="{{User.avatar}}"></image>
-    {{Drinks.drink}}
+  <view class="avatar-items" wx:for="{{drinks}}" id="{{drinks.id}}" wx:for-item="drink">
+    <image class="avatar" src="{{drink.resource.avatar}}"></image>
+    {{drink.drink}}
   </view>
 </view>
 
 <view wx:if="{{tab_name === 'Equipment'}}">
-  <view class="avatar-items" wx:for="{{Equipment}}" id="{{Equipment.id}}" wx:for-item="Tools">
-    <image class="avatar" src="{{User.avatar}}"></image>
-    {{Tools.equipment}}
+  <view class="avatar-items" wx:for="{{equipment}}" id="{{equipment.id}}" wx:for-item="equipment">
+    <image class="avatar" src="{{equipment.resource.avatar}}"></image>
+    {{equipment.equipment}}
   </view>
 </view>
 
 
 <view class="bottom-buttons">
  <view class="RSVP">
-  <button class="btn-share"style="margin:unset;">SHARE</button>
-  <button class="btn-RSVP" bindtap="goToPopup" style="margin:unset;">RSVP</button>
+  <button class="btn-share" style="margin:unset;" open-type="share">SHARE</button>
+  <button id="{{event.id}}" class="btn-RSVP" bindtap="goToPopup" style="margin:unset;">RSVP</button>
  </view>
 </view>
-
-
-
