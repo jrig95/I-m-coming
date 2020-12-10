@@ -1,11 +1,9 @@
 <!--pages/upload/upload.wxml-->
-<view class="pagecontainer">
 <form bindsubmit="submitEvent">
   <view class="profileupload" >
     <view class="cardimage">
-      <button bindtap="getPhoto" type="primary" wx:if="{{!image}}">Upload Image</button>
-      <image wx:else src="{{image}}" mode="aspectFill" bindtap="previewImage"></image>
-      <text>Upload Your Photo Here</text> 
+      <image class="uploadimage" src="/images/upload_1.png" bindtap="getPhoto" type="primary" wx:if="{{!image}}"></image>
+      <image class="uploadcompleteimg" wx:else src="{{image}}" mode="aspectFill" bindtap="previewImage"></image>
     </view>
   </view>
 
@@ -24,7 +22,7 @@
       <view class="wherecard">
     <text class="event">Event Location</text> 
     <form bindsubmit="formSubmit">
-      <textarea  bindtap="getLocation" class="wherearea" name="address" bindconfirm="formSubmit" value="{{address}}"></textarea>
+      <textarea bindtap="getLocation" class="wherearea" name="address" bindconfirm="formSubmit" value="{{address}}" placeholder="What is the name of your event?"></textarea>
     </form>
     <text class="pinlocation">Pin Your Location</text>
   </view>
@@ -36,15 +34,13 @@
     </form>
   </view>
 
-  <view class="bringcard">
-    <radio-group bindchange="radioChange" class="bring">Do you want attendees to bring food/drinks or equipment?
-      <label class="radio" wx:for="{{items}}">
+  <view class="bring">
+    <radio-group bindchange="radioChange" class="bring">Do you want attendees to bring food/drinks or equipment?<label class="radio" wx:for="{{items}}">
         <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
       </label>
     </radio-group>
   </view>
-      <button class="btn-submit"formType="submit">Submit</button>
+      <button class="submitbutton" formType="submit">Submit</button>
     </view>
   </view>
 </form>
-</view>
