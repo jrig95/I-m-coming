@@ -2,8 +2,10 @@
 
 <cover-image class="event-banner" mode="aspectFill" src="{{event.image}}"></cover-image>
 <view class="event-creator">
-<view class="event-title">{{event.name}}</view>
-<image class="avatar" src="{{user.avatar}}"></image>
+  <view class="avataricon">
+  <image class="avatar" src="{{user.avatar}}"></image>
+  <view class="event-title">{{event.name}}</view>  
+  </view>
 </view>
 
 <view class= "event-details">
@@ -28,9 +30,9 @@
 
 
 <view class="item-form">
-<button bindtap="goToFood" class="food-form" >Food</button>
-<button bindtap="goToDrinks" class="drink-form"  >Drinks</button>
-<button bindtap="goToEquip" class="equip-form">Equipment</button>
+<button hover-class="button-hover" bindtap="goToFood" class="food-form" >Food</button>
+<button hover-class="button-hover"bindtap="goToDrinks" class="drink-form"  >Drinks</button>
+<button hover-class="button-hover"bindtap="goToEquip" class="equip-form">Equipment</button>
 </view>
 
 <view wx:if="{{tab_name === 'Food'}}">
@@ -58,10 +60,7 @@
 
 <view class="bottom-buttons">
  <view class="RSVP">
-  <button class="btn-share" style="margin:unset;width:auto;" open-type="share">SHARE</button>
-  <button id="{{event.id}}" class="btn-RSVP" bindtap="goToPopup" style="margin:unset;width:auto;">RSVP</button>
+  <button class="btn-share" style="margin:unset;" open-type="share">SHARE</button>
+  <button id="{{event.id}}" class="btn-RSVP" bindtap="goToPopup" style="margin:unset;">RSVP</button>
  </view>
 </view>
-
-
-

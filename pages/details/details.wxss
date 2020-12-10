@@ -10,7 +10,6 @@
 .event-container {
   font-family: 'Lato', sans-serif;
   border-radius: 30rpx;
-  background-color: teal;
 }
 
 
@@ -37,12 +36,12 @@
 
 .event-title {
  font-family: 'Lato', sans-serif;
- font-size: 50rpx;
+ font-size: 40rpx;
  font-weight:bold;
  justify-content: center;
  color: #f57170;
- padding-left: 20rpx;
- padding-top:20rpx;
+ padding-left: 10rpx;
+ padding-top:10rpx;
  margin-bottom:10rpx;
 }
 
@@ -107,6 +106,7 @@
   padding-bottom: 10rpx;
   padding-top: 10rpx;
   color: #707070;
+  border:2rpx #a3d8f4;
 }
 
 .food-form {
@@ -115,7 +115,7 @@
   font-size: 30rpx;
   color: #999b84;
   justify-content: center;
-
+  border:2rpx #a3d8f4;
 }
 
 .drink-form{
@@ -126,6 +126,7 @@
   justify-content: center;
 }
 
+
 .equip-form {
   background-color: white;
   font-family: 'Lato', sans-serif;
@@ -133,6 +134,10 @@
   color: #999b84;
   /* padding-right: 20rpx; */
   justify-content: center;
+}
+
+.button-hover {
+ background-color: #ffe0d8
 }
 
 .food-list {
@@ -168,7 +173,6 @@
  /* position: fixed; */
  /* flex-direction: row; */
  justify-content: space-evenly;
- align-items: flex-end;
  padding-left: 70rpx;
  padding-right:70rpx ;
  bottom: 0em;
@@ -181,24 +185,25 @@
 .btn-share {
   padding-left: 30rpx;
   padding-right: 30rpx;
+  width:35%;
   justify-content: center;
  background-color: white;
   color:white;
   background-color: #efb08c;
   border-radius: 20rpx;
-  box-shadow: 0 8px 10px 0 rgba(0,0,0,0.1);
   text-align: center;
 }
 
 .btn-RSVP {
   padding-left: 30rpx;
   padding-right: 30rpx;
+  width:35%;
   margin-left: 30rpx;
   margin-right: 30rpx;
   justify-content: center;
   background-color: white;
   color:white;
-  background-color: #a3d8f4;
+  background-color: #8ad7c1;
   /* border: 2px solid #a6e3e9; */
   border-radius: 20rpx;
   text-align: center;
@@ -219,14 +224,32 @@
   font-family: 'Lato', sans-serif;
   display: inline-flex;
   padding-top:12rpx;
+  padding-left:10rpx;
 }
 
-.avatar{
+.avatar {
   border-radius: 50%;
-  height: 40rpx;
-  width: 40rpx;
+  height: 50rpx;
+  width: 50rpx;
+  margin-left:20rpx;
+  margin-right: 20rpx;
+  margin-top:10rpx;
 }
 
+.avataricon{
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+
+}
+
+.image.avatar {
+  height: 25rpx;
+  width: 25rpx;
+  margin-left:20rpx;
+  margin-right: 10rpx;
+  border-radius: 50%;
+}
 
 .attendees{
   font-size: 30rpx;

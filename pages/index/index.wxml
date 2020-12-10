@@ -1,6 +1,6 @@
 <view class="container1">
-   <button bindtap="goToUpcoming" class="btn-upcoming" >Upcoming</button>
-   <button bindtap="goToPast" class="btn-past">Past</button>
+   <button hover-class="button-hover" bindtap="goToUpcoming" class="btn-upcoming" >Upcoming</button>
+   <button hover-class="button-hover" bindtap="goToPast" class="btn-past">Past</button>
 </view>
 <view class="masonry">
    <view class="card" bindtap="goToEvent" wx:for="{{upcoming_items}}" id="{{upcoming.id}}" wx:for-item="upcoming" wx:if="{{tab_name === 'upcoming'}}">
@@ -27,5 +27,5 @@
 </view>
 
 <view class="container2">
-  <navigator url = "/pages/upload/upload"><image class="upload" src="/images/upload.svg"></image></navigator>
+  <navigator url="/pages/upload/upload"><image class="upload" src="/images/upload.png"></image></navigator>
 </view>
