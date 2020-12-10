@@ -16,14 +16,17 @@ Page({
     let food = e.detail.value.food
     let drink = e.detail.value.drink
     let equipment = e.detail.value.equipment
+    let nothing = e.detail.value.nothing
     let eventId = this.data.eventId
 
     const Resources = new wx.BaaS.TableObject("event_resources");
     const resource = Resources.create()
+    console.log(nothing)
     resource.set({
       food,
       drink,
       equipment,
+      nothing,
       resource: user.id,
       events_id: eventId
     })

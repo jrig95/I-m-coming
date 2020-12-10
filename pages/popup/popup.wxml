@@ -25,6 +25,13 @@
     </view>
   </view>
 
+  <text class="boxtitle">Free Loader</text> 
+  <view bindsubmit="postView">
+    <view class="postbox">
+      <input class="textarea" name="nothing" bindconfirm="formSubmit" placeholder="Are you free loading?"/>
+    </view>
+  </view>
+
   <view class="buttoncontainer" style="margin:unset">
     <button wx:if="{{user.is_authorized}}" class="button" form-type="submit">Submit</button>
     <button wx:else open-type="getUserInfo" bindgetuserinfo="userInfoHandler" class="button">Submit</button>  
