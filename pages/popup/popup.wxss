@@ -16,7 +16,7 @@
    height: 15vh;
    justify-content: center;
    padding-bottom:20rpx;
-   padding-top:30rpx;
+   padding-top:50rpx;
    padding-left:20rpx;
    color:white;
    font-size: large;

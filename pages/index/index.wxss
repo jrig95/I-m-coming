@@ -9,14 +9,14 @@
 .btn-upcoming {
   background-color: white;
   font-size: 40rpx;
-  color: #8ad7c1
+  color: #222831;
 }
 
 
 .btn-past {
   background-color: white;
   font-size: 40rpx;
-  color: #8ad7c1;
+  color: #222831;
 }
 
 .card{
@@ -90,7 +90,7 @@
 }
 
 .button-hover {
-  background-color: #fff3b2;
+  background-color: #ffe0d8;
 }
 
 .container2 {
