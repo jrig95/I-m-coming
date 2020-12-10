@@ -36,6 +36,7 @@ Page({
         const food = [];
         const drinks = [];
         const equipment = [];
+        const nothing = [];
         for (let i = 0; i < resources.length; i++) {
           const oneResource = resources[i];
           if(resources[i].food){
@@ -50,12 +51,17 @@ Page({
             const newResource = oneResource;
             equipment.push(newResource);
           };
+          if(resources[i].nothing){
+            const newResource = oneResource;
+            nothing.push(newResource);
+          };
         }
         this.setData({
           resources,
           food,
           drinks,
-          equipment
+          equipment,
+          nothing
         })
       })
     }
@@ -92,6 +98,13 @@ Page({
     console.log("event", e)
     this.setData({
       tab_name: "Equipment"
+    });
+  },
+
+  goToNothing: function(e) {
+    console.log("event", e)
+    this.setData({
+      tab_name: "Free Loading"
     });
   },
 

@@ -21,7 +21,7 @@
   <button class="btn-map" bindtap="openMap" style="margin:unset;width:130rpx;">See Map</button>
  </view>
 
- <view class="attendees">Who's In 🙌🏻
+ <view class="attendees">{{event.resource.avatar}}
  </view>
  <view class="attendee-avatar"></view>
 
@@ -30,9 +30,10 @@
 
 
 <view class="item-form">
-<button hover-class="button-hover" bindtap="goToFood" class="food-form" >Food</button>
-<button hover-class="button-hover"bindtap="goToDrinks" class="drink-form"  >Drinks</button>
-<button hover-class="button-hover"bindtap="goToEquip" class="equip-form">Equipment</button>
+<button bindtap="goToFood" class="food-form" >Food</button>
+<button bindtap="goToDrinks" class="drink-form"  >Drinks</button>
+<button bindtap="goToEquip" class="equip-form">Equipment</button>
+<button bindtap="goToNothing" class="nothing-form">Free Loading</button>
 </view>
 
 <view wx:if="{{tab_name === 'Food'}}">
@@ -54,6 +55,12 @@
   <view class="avatar-items" wx:for="{{equipment}}" id="{{equipment.id}}" wx:for-item="equipment">
     <image class="avatar" src="{{equipment.resource.avatar}}"></image>
     {{equipment.equipment}}
+  </view>
+</view>
+<view wx:if="{{tab_name === 'Free Loading'}}">
+  <view class="avatar-items" wx:for="{{nothing}}" id="{{nothing.id}}" wx:for-item="nothing">
+    <image class="avatar" src="{{nothing.resource.avatar}}"></image>
+    {{nothing.nothing}}
   </view>
 </view>
 
