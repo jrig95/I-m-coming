@@ -1,4 +1,5 @@
 <!--pages/upload/upload.wxml-->
+<view class="pagecontainer">
 <form bindsubmit="submitEvent">
   <view class="profileupload" >
     <view class="cardimage">
@@ -42,7 +43,8 @@
       </label>
     </radio-group>
   </view>
-      <button formType="submit">Submit</button>
+      <button class="btn-submit"formType="submit">Submit</button>
     </view>
   </view>
 </form>
+</view>

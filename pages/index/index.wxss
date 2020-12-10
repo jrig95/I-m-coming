@@ -8,18 +8,15 @@
 
 .btn-upcoming {
   background-color: white;
-}
-
-.btn-upcoming:hover {
-  opacity: 0.7;
-  text-decoration: underline #f57170; 
-  font-stretch: expanded;
+  font-size: 40rpx;
+  color: #8ad7c1
 }
 
 
 .btn-past {
   background-color: white;
-  text-shadow: yellow; 
+  font-size: 40rpx;
+  color: #8ad7c1;
 }
 
 .card{
@@ -86,8 +83,14 @@
 }
 
 .upload {
-  width: 100%;
-  align-items: center;
+    width: 35px;
+    align-items: center;
+    height: 35px;
+    position:sticky;
+}
+
+.button-hover {
+  background-color: #fff3b2;
 }
 
 .container2 {

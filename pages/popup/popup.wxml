@@ -1,5 +1,5 @@
 <!--pages/index/popup.wxml-->
-<view class="pagecontainer">
+<view class="pagecontainer" mode="aspectfill">
  <view class="message-area">
   <text class="message">Would you like attendees to bring anything to the event?</text>
  </view>
