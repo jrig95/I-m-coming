@@ -97,7 +97,7 @@ Page({
   goToEquip: function(e) {
     console.log("event", e)
     this.setData({
-      tab_name: "Equipment"
+      tab_name: "Tools"
     });
   },
 

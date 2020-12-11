@@ -32,7 +32,7 @@
 <view class="item-form">
 <button bindtap="goToFood" class="food-form" >Food</button>
 <button bindtap="goToDrinks" class="drink-form"  >Drinks</button>
-<button bindtap="goToEquip" class="equip-form">Equipment</button>
+<button bindtap="goToEquip" class="equip-form">Tools</button>
 <button bindtap="goToNothing" class="nothing-form">Free Loading</button>
 </view>
 
@@ -51,7 +51,7 @@
   </view>
 </view>
 
-<view wx:if="{{tab_name === 'Equipment'}}">
+<view wx:if="{{tab_name === 'Tools'}}">
   <view class="avatar-items" wx:for="{{equipment}}" id="{{equipment.id}}" wx:for-item="equipment">
     <image class="avatar" src="{{equipment.resource.avatar}}"></image>
     {{equipment.equipment}}
