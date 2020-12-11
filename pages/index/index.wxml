@@ -27,5 +27,4 @@
 </view>
 
 <view class="container2">
-  <navigator url="/pages/upload/upload"><image class="upload" src="/images/upload.png"></image></navigator>
 </view>

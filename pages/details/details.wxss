@@ -3,7 +3,7 @@
 .event-banner {
   width: 100%;
   /* ???? */
-  height: 40vh;
+  height: 35vh;
   justify-content: center;
 }
 
@@ -58,12 +58,11 @@
 }
 
 .item-form {
-  border-bottom: 2rpx dotted #ea97ad;
   padding-right: 20rpx;
   padding-left:20rpx;
   margin-left: 30rpx;
   margin-right: 30rpx;
-
+  
 }
 
 
@@ -94,10 +93,11 @@
 
 .item-form {
   font-family: 'Lato', sans-serif;
-  font-size: 30rpx;
   display:flex;
+  font-size: 10rpx;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: left;
+  /* justify-content: space-evenly; */
   padding-left:20rpx;
   padding-right:20rpx;
   justify-content: space-evenly;
@@ -107,43 +107,56 @@
   padding-top: 10rpx;
   color: #707070;
   border:2rpx #a3d8f4;
+  position: relative;
 }
 
 .food-form {
   background-color: white;
   font-family: 'Lato', sans-serif;
-  font-size: 30rpx;
   color: #999b84;
   justify-content: center;
   border:2rpx #a3d8f4;
+  font-size: 25rpx;
 }
 
 .drink-form{
   background-color: white;
   font-family: 'Lato', sans-serif;
-  font-size: 30rpx;
+  /* font-size: 30rpx; */
   color: #999b84;
-  justify-content: center;
+  font-size: 25rpx;
+  /* justify-content: center; */
 }
 
 
 .equip-form {
   background-color: white;
   font-family: 'Lato', sans-serif;
-  font-size: 30rpx;
+  /* font-size: 30rpx; */
   color: #999b84;
   /* padding-right: 20rpx; */
-  justify-content: center;
+  /* justify-content: left; */
+  font-size: 25rpx;
+  word-wrap: break-word ;
 }
+
 
 .button-hover {
  background-color: #ffe0d8
 }
 
 .food-list {
-  font-size:40rpx;
-  word-wrap: break-word;
+  font-size:25rpx;
   margin-bottom: 10rpx;
+}
+
+.nothing-form {
+  background-color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 25rpx;
+  color: #999b84;
+  justify-content: center;
+  border:2rpx #a3d8f4;
 }
 
 .btn-map {
@@ -173,8 +186,10 @@
  /* position: fixed; */
  /* flex-direction: row; */
  justify-content: space-evenly;
- padding-left: 70rpx;
- padding-right:70rpx ;
+ padding-left: 5vw;
+ padding-right: 5vw;
+ padding-bottom: 15rpx;
+ position: fixed;
  bottom: 0em;
  background-color: white;
  margin-top: 40rpx;
@@ -219,10 +234,13 @@
   padding-top: 7rpx;
 }
 
+
+
 .avatar-items{
   font-size: 30rpx;
   font-family: 'Lato', sans-serif;
-  display: inline-flex;
+  display: flex;
+  flex: 1;
   padding-top:12rpx;
   padding-left:10rpx;
 }
@@ -244,11 +262,12 @@
 }
 
 .image.avatar {
-  height: 25rpx;
-  width: 25rpx;
+  height: fixed 25rpx;
+  width: fixed 25rpx;
   margin-left:20rpx;
   margin-right: 10rpx;
   border-radius: 50%;
+  
 }
 
 .attendees{
