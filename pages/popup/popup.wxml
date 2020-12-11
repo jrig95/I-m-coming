@@ -3,7 +3,7 @@
 <form bindsubmit="submitEvent" mode="aspectfill">
 
  <view class="message-area">
-  <text class="message">Would you like attendees to bring anything to the event?</text>
+  <text class="message">What would you like to bring?</text>
  </view>
 
   <text class="boxtitle">Food</text>
@@ -20,7 +20,7 @@
     </view>
   </view>
 
-  <text class="boxtitle">Equipment</text> 
+  <text class="boxtitle">Tools</text> 
   <view bindsubmit="postView">
     <view class="postbox">
       <input class="textarea" name="equipment" bindconfirm="formSubmit" placeholder="What Equipment Will You Bring?"/>
