@@ -113,7 +113,7 @@
 .food-form {
   background-color: white;
   font-family: 'Lato', sans-serif;
-  color: #999b84;
+  color: black;
   justify-content: center;
   border:2rpx #a3d8f4;
   font-size: 25rpx;
@@ -123,7 +123,7 @@
   background-color: white;
   font-family: 'Lato', sans-serif;
   /* font-size: 30rpx; */
-  color: #999b84;
+  color: black;
   font-size: 25rpx;
   /* justify-content: center; */
 }
@@ -133,7 +133,7 @@
   background-color: white;
   font-family: 'Lato', sans-serif;
   /* font-size: 30rpx; */
-  color: #999b84;
+  color: black;
   /* padding-right: 20rpx; */
   /* justify-content: left; */
   font-size: 25rpx;
@@ -154,9 +154,23 @@
   background-color: white;
   font-family: 'Lato', sans-serif;
   font-size: 25rpx;
-  color: #999b84;
+  color: black;
   justify-content: center;
   border:2rpx #a3d8f4;
+
+}
+
+.nothing-hover{
+  background-color:#8ad7c1;
+}
+.food-hover{
+  background-color:#8ad7c1;
+}
+.drink-hover{
+  background-color:#8ad7c1;
+}
+.tools-hover{
+  background-color:#8ad7c1;
 }
 
 .btn-map {
@@ -186,13 +200,13 @@
  /* position: fixed; */
  /* flex-direction: row; */
  justify-content: space-evenly;
- padding-left: 5vw;
- padding-right: 5vw;
  padding-bottom: 15rpx;
  position: fixed;
  bottom: 0em;
  background-color: white;
  margin-top: 40rpx;
+ box-sizing: border-box;
+ min-width: 100%;
 }
 
 
@@ -200,7 +214,7 @@
 .btn-share {
   padding-left: 30rpx;
   padding-right: 30rpx;
-  width:35%;
+  width:40%;
   justify-content: center;
  background-color: white;
   color:white;
@@ -212,7 +226,7 @@
 .btn-RSVP {
   padding-left: 30rpx;
   padding-right: 30rpx;
-  width:35%;
+  width:40%;
   margin-left: 30rpx;
   margin-right: 30rpx;
   justify-content: center;
@@ -275,4 +289,9 @@
   font-family: 'Lato', sans-serif;
   padding: 20rpx; 
 
+}
+
+.active{
+ color: #f57170;
+ border-bottom: 3rpx solid black;
 }

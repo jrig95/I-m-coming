@@ -80,23 +80,46 @@ Page({
     },
 
     createEvent: function(event){
+        console.log(event)
         const date_and_time = moment(`${this.data.date} ${this.data.time}`).toISOString();
         
         const Events = new wx.BaaS.TableObject("events_planning");
         const newEvent = Events.create();
         newEvent.set({
             date_and_time,
-            name: event.detail.value.name,
+            name: this.data.name,
             latitude: this.data.latitude,
             longitude: this.data.longitude,
             address: this.data.address,
-            description: event.detail.value.description,
+            description: this.data.description,
             image: this.data.image,
             decision: this.data.decision,
             creator: this.data.user.id
         })
-        newEvent.save().then((res) => { wx.switchTab({ url: '/pages/index/index' }) })
+        newEvent.save().then((res) => { 
+            console.log(event)
+            this.setData({
+                date: false,
+                time: false,
+                image:null
+            })
+            wx.switchTab({ url: '/pages/index/index' }) })
     },
+
+    inputName: function (e) {
+        this.setData({
+          name: e.detail.value,
+        });
+      },
+
+      inputDescription: function (e) {
+        this.setData({
+          description: e.detail.value,
+        });
+      },
+
+    
+
     submitEvent: function(event) {
         let user = wx.getStorageSync('user')
         if (user) this.createEvent(event);

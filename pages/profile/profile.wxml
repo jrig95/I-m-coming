@@ -1,8 +1,10 @@
 <!--pages/profile/profile.wxml-->
+<view class="pagecontainer">
 <view class="profile" wx:if="{{currentUser}}">
   <image class="avatar" src="{{currentUser.avatar}}"></image>
-  <text>{{currentUser.nickname}}</text>
+  <text class="avatartext">{{currentUser.nickname}}</text>
 </view>
 <view wx:else>
 <button open-type="getUserInfo" bindgetuserinfo="userInfoHandler">微信 Login</button>
+</view>
 </view>

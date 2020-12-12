@@ -30,10 +30,10 @@
 
 
 <view class="item-form">
-<button bindtap="goToFood" class="food-form" >Food</button>
-<button bindtap="goToDrinks" class="drink-form"  >Drinks</button>
-<button bindtap="goToEquip" class="equip-form">Tools</button>
-<button bindtap="goToNothing" class="nothing-form">Free Loading</button>
+<button  hover-class="food-hover" bindtap="goToFood" class="food-form {{tab_name==='Food' && 'active'}}"  >Food</button>
+<button  hover-class="drink-hover" bindtap="goToDrinks" class="drink-form {{tab_name==='Drinks' && 'active'}}"  >Drinks</button>
+<button  hover-class="tools-hover" bindtap="goToEquip" class="equip-form {{tab_name==='Tools' && 'active'}}">Tools</button>
+<button hover-class="nothing-hover" bindtap="goToNothing" class="nothing-form {{tab_name==='Free Loading' && 'active'}}">Free Loading</button>
 </view>
 
 <view wx:if="{{tab_name === 'Food'}}">
