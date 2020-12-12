@@ -1,9 +1,22 @@
 /* pages/profile/profile.wxss */
+.pagecontainer{
+  background-color: white;
+  min-height: 100vh;
+}
+
+.profile{
+  padding-top: 10vh;
+}
+
 .avatar{
   border-radius: 50%;
-  height: 120rpx;
-  width: 120rpx;
+  height: 200rpx;
+  width: 200rpx;
   
+}
+
+.avatartext{
+  font-size: 40 rpx;
 }
 
 .profile{

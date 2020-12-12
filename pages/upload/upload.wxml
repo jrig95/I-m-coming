@@ -1,5 +1,5 @@
 <!--pages/upload/upload.wxml-->
-<form bindsubmit="submitEvent">
+<form bindreset="submitEvent">
   <view class="profileupload" >
     <view class="cardimage">
       <image class="uploadimage" src="/images/upload_1.png" bindtap="getPhoto" type="primary" wx:if="{{!image}}"></image>
@@ -9,7 +9,7 @@
 
   <view class="eventcard">
     <text class="event">Event Name</text> 
-    <input class="eventarea" name="name" placeholder="What is the name of your event?"/>
+    <input bindinput="inputName" class="eventarea" name="name" placeholder="What is the name of your event?"/>
   </view>
 
   <view class="whencard" >
@@ -21,16 +21,16 @@
     <view class="btn-area">
       <view class="wherecard">
     <text class="event">Event Location</text> 
-    <form bindsubmit="formSubmit">
+    <view>
       <textarea bindtap="getLocation" class="wherearea" name="address" bindconfirm="formSubmit" value="{{address}}" placeholder="What is the name of your event?"></textarea>
-    </form>
+    </view>
     <text class="pinlocation">Pin Your Location</text>
   </view>
 
   <view class="descriptioncard">
     <text class="description">Description</text> 
     
-      <input class="descriptionarea" name="description" placeholder="Decsribe Your Event"/>
+      <input bindinput="inputDescription" class="descriptionarea" name="description" placeholder="Decsribe Your Event"/>
   </view>
 
   <view class="bring">
@@ -40,7 +40,7 @@
     </radio-group>
   </view>
 
-  <button wx:if="{{user.is_authorized}}" class="submitbutton" form-type="submit">Submit</button>
+  <button wx:if="{{user.is_authorized}}" class="submitbutton" form-type="reset">Submit</button>
   <button wx:else open-type="getUserInfo" bindgetuserinfo="userInfoHandler" class="submitbutton">Submit</button>
 
     </view>
